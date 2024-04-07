@@ -49,3 +49,7 @@ median(Years)
 sd(Attendance)
 sd(Salary)
 sd(Years)
+
+#first and third quantile
+summary(Attendance)
+
