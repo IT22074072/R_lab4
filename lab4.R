@@ -60,3 +60,7 @@ quantile(Attendance)[2]
 #third quantile
 quantile(Attendance)[4]
 
+#IQR
+IQR(Attendance)
+IQR(Salary)
+IQR(Years)
