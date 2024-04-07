@@ -53,3 +53,10 @@ sd(Years)
 #first and third quantile
 summary(Attendance)
 
+#quantile value
+quantile(Attendance)
+#first quantile
+quantile(Attendance)[2]
+#third quantile
+quantile(Attendance)[4]
+
