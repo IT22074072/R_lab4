@@ -33,3 +33,19 @@ abline(h=0)
 stem(Attendance)
 stem(Salary)
 stem(Years)
+
+
+#mean
+mean(Attendance)
+mean(Salary)
+mean(Years)
+
+#median
+median(Attendance)
+median(Salary)
+median(Years)
+
+#standard deviation
+sd(Attendance)
+sd(Salary)
+sd(Years)
