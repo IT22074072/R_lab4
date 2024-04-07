@@ -64,3 +64,14 @@ quantile(Attendance)[4]
 IQR(Attendance)
 IQR(Salary)
 IQR(Years)
+
+#function that accept argument years and give the mode
+get.modes<- function(y){
+  counts<-table(y)
+  names(counts)[counts== max(counts)]
+  
+}
+
+
+get.modes(Years)
+
