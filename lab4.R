@@ -75,3 +75,20 @@ get.modes<- function(y){
 
 get.modes(Years)
 
+#Outliers
+get.outliers<-function(y){
+  q1<-quantile(y)[2]
+  q3<-quantile(y)[4]
+  iqr<-IQR(y)
+  ub<-q3+1.5*iqr
+  lb<-q1-1.5*iqr
+  print(paste("Upper Bound", ub))
+  print(paste("Lower Bound", lb))
+  print(paste("Outliers", paste(sort(y[y < lb | y > ub]), collapse = ",")))
+  
+}
+
+get.outliers(Years)
+get.outliers(Attendance)
+get.outliers(Salary)
+
